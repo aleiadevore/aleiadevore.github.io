@@ -1,0 +1,31 @@
+h1 {
+    font-size: 82px;
+    text-align: center;
+    color: #001A3D;
+}
+#subheading {
+    color: #183A2D;
+    text-align: center;
+    font-size: 24px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.rose_gold {
+    background-color: #CE8F86;
+    height: 500px;
+    width: inherit;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+}
+.navy {
+    background-color: #012960;
+    height: 500px;
+    width: inherit;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+}
+.navy h1 {
+    color: #D17C19;
+}
+.gold {
+    background-color: #D17C19;
+}
