@@ -10,7 +10,8 @@ h1 {
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .rose_gold {
-    background-color: #CE8F86;
+    /*background-color: #CE8F86;*/
+    background-color: #ae8a86;
     height: 500px;
     width: inherit;
     padding: 15px 15px 15px 15px;
@@ -24,8 +25,229 @@ h1 {
     margin: 0px 0px 0px 0px;
 }
 .navy h1 {
-    color: #D17C19;
+    color: #afbdbb;
 }
-.gold {
-    background-color: #D17C19;
+.purple {
+    background-color: #52303f;
+    height: 500px;
+    width: inherit;
+    padding: 15px 150px 15px 150px;
+    margin: 0px 0px 0px 0px;
+    color: #b7a8af;
+}
+.purple h1 {
+    color: #b7a8af;
+}
+.emerald {
+    background-color: #0c483e;
+    height: 500px;
+    width: inherit;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+}
+.rain {
+    background-color: #afbdbb;
+    height: 500px;
+    width: inherit;
+    padding: 15px 15px 15px 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+/* Universal styles
+___________________________________*/
+body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 16pt;
+    width: 100%
+}
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+}
+
+/* Navigation styles
+___________________________________*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    background-color: #0c483e;
+    width: 100%;
+    height: max-content;
+    top: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0;
+    margin-right: 0;
+    font-size: 2vw;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header a{
+    text-decoration: none;
+    padding: 30px 75px 46px 75px;
+    color: burlywood;
+}
+
+nav {
+    margin: 0px 0px 16px 0px;
+    /*padding-left: 24px;
+    padding-right: 24px;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: stretch;
+}
+nav a {
+    /*width: 100%;*/
+    padding: 30px 75px 30px 75px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    text-decoration: none;
+ }
+ nav a:hover {
+     background-color: burlywood;
+     color: #0c483e;
+ }
+ p {
+     font-family: 'Roboto', sans-serif;
+     font-size: 18pt;
+     color: white;
+ }
+
+/* Page styles
+    _____________________________________________*/
+#Pages {
+    margin-top: 100px;
+}
+
+#Home {
+    position: static;
+    text-align: center;
+    padding-top: 200px;
+    /*padding-bottom: 200px;*/
+    color: white;
+    background-color: #afbdbb;
+    height: 500px;
+}
+
+#About {
+    position: static;
+    padding-top: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10%;
+    background-color: #178a76;
+    height: contain;
+}
+
+#Featured {
+    position: static;
+    padding-top: 10%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10%;
+    /*padding-bottom: 200px;*/
+    color: white;
+    background-color: darkgoldenrod;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #b7a8af;
+}
+
+#Featured h2{
+    color: #051c18;
+}
+
+#Projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: max-content;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-wrap: none;
+}
+
+.project:hover {
+    box-shadow: 6px 10px 3px 3px rgba(0, 0, 0, 0.2), 0 6px 10px 3px rgba(0, 0, 0, 0.19);
+}
+
+.project ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    width: min-content;
+    padding-left: 0;
+    padding-right: 10px;
+    background-color: #0c3448;
+    padding: 3% 5% 3% 5%;
+    margin: 0;
+    color: white;
+}
+
+.project li {
+    list-style: none;
+}
+
+.project-info {
+    padding-left: 5%;
+    padding: 3% 5% 3% 5%;
+    color: #012960;
+}
+
+/* Footer styles
+___________________________________*/
+footer {
+    align-items: center;
+    background-color: #0c483e;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /*width: 100%;*/
+    height: max-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0;
+    margin-right: 0;
+    margin: 0;
+    font-size: 2vw;
+}
+
+footer ul {
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+}
+
+footer li {
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    padding: 30px 75px 46px 75px;
+    color: burlywood;
 }
