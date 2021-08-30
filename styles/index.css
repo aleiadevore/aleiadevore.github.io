@@ -64,8 +64,13 @@ body {
     width: 100%
 }
 html {
+    background-color: #0c483e;
     font-size: 18px;
     scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
 }
 
 /* Navigation styles
@@ -137,6 +142,9 @@ nav a {
     padding-top: 200px;
     /*padding-bottom: 200px;*/
     color: white;
+    /*background-image: url("../images/Personal_Favicon_rose_gold.png");*/
+    background-position: left;
+    background-repeat: no-repeat;
     background-color: #afbdbb;
     height: 500px;
 }
@@ -144,8 +152,8 @@ nav a {
 #About {
     position: static;
     padding-top: 10%;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 15%;
+    padding-right: 15%;
     padding-bottom: 10%;
     background-color: #178a76;
     height: contain;
@@ -177,16 +185,21 @@ nav a {
 }
 
 .project {
-    background-color: white;
+    /*background-color: white;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: max-content;
+    width: 30%;
     height: 250px;
     display: flex;
     flex-direction: row;
-    flex-grow: 2;
     margin-left: 10px;
     margin-right: 10px;
     flex-wrap: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+#lumi-cue .project{
+    background-image: url("../images/Lumi\ Cue\ Github\ Cover.png");
 }
 
 .project:hover {
@@ -205,7 +218,7 @@ nav a {
     background-color: #0c3448;
     padding: 3% 5% 3% 5%;
     margin: 0;
-    color: white;
+    /*color: white;*/
 }
 
 .project li {
@@ -213,9 +226,13 @@ nav a {
 }
 
 .project-info {
+    flex-grow: 2;
     padding-left: 5%;
     padding: 3% 5% 3% 5%;
-    color: #012960;
+    background-image: url("../images/Lumi\ Cue\ transparent\ logo.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Footer styles
@@ -223,7 +240,6 @@ ___________________________________*/
 footer {
     align-items: center;
     background-color: #0c483e;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     /*width: 100%;*/
     height: max-content;
     padding-top: 15px;
@@ -237,6 +253,7 @@ footer {
 }
 
 footer ul {
+    font-size: 18px;
     text-decoration: none;
     text-align: center;
     list-style: none;
@@ -248,6 +265,5 @@ footer li {
 
 footer a{
     text-decoration: none;
-    padding: 30px 75px 46px 75px;
     color: burlywood;
 }
