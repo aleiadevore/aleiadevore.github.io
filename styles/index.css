@@ -1,14 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Allison&family=Poiret+One&family=Raleway&display=swap');
+
 h1 {
     font-size: 3.8em;
     text-align: center;
     color: #001A3D;
+    font-family: 'Poiret One', cursive;
 }
 
 h2 {
     font-size: 2em;
+    font-family: 'Poiret One', cursive;
 }
 h3 {
     font-size: 1.25em;
+    font-family: 'Poiret One', cursive;
 }
 
 p {
@@ -21,7 +26,8 @@ p {
     color: #183A2D;
     text-align: center;
     font-size: 1.25em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    /*font-family:Georgia, 'Times New Roman', Times, serif;*/
+    font-family: 'Raleway', sans-serif;
 }
 .rose_gold {
     /*background-color: #CE8F86;*/
@@ -120,6 +126,7 @@ header a{
     text-decoration: none;
     padding: 30px 75px 46px 75px;
     color: burlywood;
+    font-family: 'Poiret One', cursive;
 }
 
 nav {
@@ -176,12 +183,24 @@ nav a {
     height: max-content;
 }
 
-#About h2, #About h3 {
+#About h2 {
+    color: #ffffff;
+}
+
+#About h3 {
+    color: #ffffff;
+}
+
+#About p {
     color: #020D0B;
 }
 
 #About ul {
     color: #020D0B
+}
+
+#About li {
+    font-family: 'Roboto', sans-serif;
 }
 
 #Featured {
@@ -285,6 +304,7 @@ footer ul {
     text-decoration: none;
     text-align: center;
     list-style: none;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer li {
