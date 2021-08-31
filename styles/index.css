@@ -1,12 +1,26 @@
 h1 {
-    font-size: 82px;
+    font-size: 3.8em;
     text-align: center;
     color: #001A3D;
 }
+
+h2 {
+    font-size: 2em;
+}
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5vw;
+    color: white;
+}
+
 #subheading {
     color: #183A2D;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.25em;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .rose_gold {
@@ -73,6 +87,12 @@ a {
     cursor: pointer;
 }
 
+@media (max-width: 1080px) {
+    nav {
+      display: none;
+    }
+  }
+
 /* Navigation styles
 ___________________________________*/
 header {
@@ -82,15 +102,16 @@ header {
     position: fixed;
     background-color: #0c483e;
     width: 100%;
-    height: max-content;
+    min-height: min-content;
+    max-height: max-content;
     top: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 10px;
+    padding-bottom: 1p0x;
     padding-left: 5%;
     padding-right: 5%;
     margin-top: 0;
     margin-right: 0;
-    font-size: 2vw;
+    font-size: 1.8vw;
     flex-wrap: wrap;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -124,11 +145,6 @@ nav a {
      background-color: burlywood;
      color: #0c483e;
  }
- p {
-     font-family: 'Roboto', sans-serif;
-     font-size: 18pt;
-     color: white;
- }
 
 /* Page styles
     _____________________________________________*/
@@ -146,7 +162,8 @@ nav a {
     background-position: left;
     background-repeat: no-repeat;
     background-color: #afbdbb;
-    height: 500px;
+    min-height: 500px;
+    max-height: max-content;
 }
 
 #About {
@@ -156,7 +173,15 @@ nav a {
     padding-right: 15%;
     padding-bottom: 10%;
     background-color: #178a76;
-    height: contain;
+    height: max-content;
+}
+
+#About h2, #About h3 {
+    color: #020D0B;
+}
+
+#About ul {
+    color: #020D0B
 }
 
 #Featured {
@@ -168,14 +193,17 @@ nav a {
     /*padding-bottom: 200px;*/
     color: white;
     background-color: darkgoldenrod;
-    height: 500px;
+    min-height: 500px;
+    max-height: max-content;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: #b7a8af;
 }
 
 #Featured h2{
     color: #051c18;
+    text-align: center;
 }
 
 #Projects {
@@ -187,13 +215,13 @@ nav a {
 .project {
     /*background-color: white;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 30%;
+    width: 40%;
     height: 250px;
     display: flex;
     flex-direction: row;
     margin-left: 10px;
     margin-right: 10px;
-    flex-wrap: none;
+    flex-wrap: wrap;
     cursor: pointer;
     background-color: white;
 }
