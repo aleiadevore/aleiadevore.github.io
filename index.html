@@ -1,75 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Software engineer specializing in augmented reality and virtual reality">
-    <meta name="keywords" content="AR, VR, web dev, software engineer, Tulsa, Aleia McNaney, Aleia DeVore">
-    <meta name="author" content="Aleia DeVore">
-    <title>Aleia DeVore</title>
-    
-    <link rel="shortcut icon" href="images/Personal_Favicon_rose_gold.png" >
-	<link rel="stylesheet" href="styles/index.css"/>
-</head>
-<body>
-    <header>
-        <a class="navbar-brand" href="#Home">Aleia DeVore</a>
-        <nav class="hidden-phone">
-            <a href="#Home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Featured">Featured Projects</a>
-        </nav>
-    </header>
-    <div id="Pages">
-        <div id="Home">
-            <h1 class="display-3">Aleia DeVore</h1>
-            <h2 id="subheading">Full-stack software engineer specializing in AR/VR.</h2>
-        </div>
-        <div id="About" class="navy">
-            <h2>About Me</h2>
-            <p>Coming from a creative background, I love the beauty of well-written code. My favorite days are spent with a
-            giant whiteboard and color-coded markers. More than anything, I love to try new things and solve complex problems.</p>
-            <h3>My favorite languages:</h3>
-            <ul id="languages">
-                <li>C</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Node.js</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div id="Featured">
-            <h2>Featured Projects</h2>
-            <div id="Projects">
-                <div class="card-outer">
-                    <div id="lumi-cue" class="card-inner">
-                        <div class="card-front">
-                            <img alt="Lumi Cue logo" src="images/Lumi_Cue_transparent_logo.png" style="width: 300px; height: 300px;">
-                        </div>
-                        <div class="card-back">
-                            <ul id="Languages_used" class="platforms">
-                                <li><img src="images/nodejs-icon-logo-black-and-white.png" style="width: 30px; height: 33px" alt="Amazon Web Services logo"></li>
-                                <li><img src="images/aws_cloud_icon.png" style="width: 60px; height: 60px" alt="Amazon Web Services logo"></li>
-                                <li><img src="images/logo_RGB_white.png" style="width: 30px; height: 30px" alt="Alexa Voice Services logo"></li>
-                            </ul>
-                            <div class="project_info">
-                                <h3>Brighten up your timers with this Alexa skill!</h3>
-                                <button id="lumicue_button" onclick="window.location.href='http://lumicue.codes'" formtarget="_blank"><b>Learn more</b></button>
-                            </div>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Home - Aleia DeVore</title>
+        <meta name="twitter:description" content="Software Engineer in Tulsa, Oklahoma. Focused on XR, passionate about backend.">
+        <meta name="twitter:image" content="assets/img/Aleia%20DeVore%20business%20card.png">
+        <meta name="twitter:card" content="summary_large_image"><meta name="description" content="Software Engineer in Tulsa, Oklahoma. Focused on XR, passionate about backend.">
+        <meta name="twitter:title" content="Aleia DeVore"><link rel="icon" type="image/png" sizes="500x500" href="assets/img/Personal_Favicon_rose_gold.png">
+        <link rel="icon" type="image/png" sizes="500x500" href="assets/img/Personal_Favicon_rose_gold.png">
+        <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Aleia%20DeVore%20business%20card%20(Logo).jpg">
+        <link rel="icon" type="image/jpeg" sizes="500x500" href="assets/img/Aleia%20DeVore%20business%20card%20(Logo).jpg">
+        <link rel="icon" type="image/png" sizes="1050x600" href="assets/img/Aleia%20DeVore%20business%20card.png">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+        <link rel="stylesheet" href="assets/fonts/font-awesome.min.css"><link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    </head>
+    <body id="page-top">
+            <a id="navigation" class="menu-toggle rounded" href="#">
+                <i class="fa fa-bars"><p class="visually-hidden">Toggle navigation</p></i>
+            </a>
+            <nav class="navbar navbar-light navbar-expand" id="sidebar-wrapper">
+                <div class="container">
+                    <button data-bs-toggle="collapse" class="navbar-toggler d-none" data-bs-target="#"></button>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav sidebar-nav" id="sidebar-nav">
+                            <li class="nav-item sidebar-brand"><a class="nav-link active js-scroll-trigger" href="#page-top">Aleia DeVore</a></li>
+                            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#page-top">Home</a></li>
+                            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item sidebar-nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <header class="d-flex masthead" style="background: url(&quot;assets/img/website_background.png&quot;) center / cover no-repeat;">
+                <div class="container my-auto text-center" style="color: #5F093D;">
+                    <h1 class="mb-1" style="color: var(--bs-body-bg);text-shadow: 1px 1px 10px var(--bs-dark);">Aleia DeVore</h1>
+                    <h2 class="mb-5" style="color: var(--bs-gray-200);"><em>Software Engineer</em></h3>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" role="button" data-bss-hover-animate="pulse" href="#about" style="background: #DDE468;color: #5F093D;">Find Out More</a>
+                    <div class="overlay"></div>
+                </div>
+            </header>
+            <section id="about" class="content-section bg-light">
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <h2>Creative Code. Strategic Design.</h2>
+                            <p class="lead mb-5">Coming from a creative background, I love the beauty of well-written code. My favorite days are spent with a giant whiteboard and color-coded markers.<br><br>More than anything, I love to try new things and solve complex problems. I may not know the answer to every technical problem, but I know how to research, and I'll have fun along the way.</p>
                         </div>
                     </div>
                 </div>
+            </section>
+            <section id="skills" class="content-section bg-primary text-white text-center" style="background-color: #333333;border: 0px solid var(--bs-purple);">
+                <div class="container"><div class="content-section-heading">
+                    <h2 class="text-secondary mb-0 text-black" style="color: #383737">Skills</h2>
+                    <h3 class="mb-5" style="color: #684857">Languages and skills I love using</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5.5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/python_transparent.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>Python</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5.5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/c_transparent.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>C</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 6rem; max-height: 6rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/Csharp_Logo.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>C#</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5.5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/mysql_logo.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>MySQL</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/html_icon.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>HTML</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/css_icon.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>CSS</strong></h3>
+                    </div>
+                    <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                        <span class="mx-auto service-icon rounded-circle mb-3">
+                            <img alt="" style="max-width: 5.5rem; max-height: 5.5rem; width: fit-content; height: fit-content;" src="assets/img/language_icons/node_js_transparent.png"></img>
+                        </span>
+                        <h3 style="color: #383737"><strong>JavaScript</strong></h3>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <footer>
-        <div id="social">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/aleiamcnaney/" id="LinkedIn">LinkedIn</a></li>
-                <li><a href="mailto:aleiadevore@gmail.com">Email</a></li>
-            </ul>
-        </div>
-    </footer>
-</body>
-</html>
+        </section>
+        <section id="portfolio" class="content-section">
+            <div class="container">
+                <div class="content-section-heading text-center">
+                    <h2 class="text-secondary mb-0">Portfolio</h2>
+                    <h3 class="mb-5">Recent Projects</h3>
+                </div>
+                <div class="row g-0 d-flex justify-content-xxl-center align-items-xxl-start">
+                    <div class="col-lg-6 d-flex justify-content-xxl-center align-items-xxl-center">
+                        <a class="portfolio-item" rel="noreferrer" href="https://aleiadevore.github.io/lumi_cue/" target="_blank">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <h3>Lumi Cue</h3>
+                                    <p class="mb-0">Brighten up your timers with this Alexa skill</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/lumi_cue_portfolio_icon.png" alt="Lumi Cue logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">
+            <div id="contact" class="container">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">&nbsp;
+                        <a rel="noreferrer" id="email" class="link-light social-link rounded-circle" href="mailto:aleiamcnaney@gmail.com" target="_blank">
+                        <i class="icon-envelope"><p class="visually-hidden">Email me</p></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">&nbsp;
+                        <a rel="noreferrer" id="LinkedIn" class="link-light social-link rounded-circle" href="https://www.linkedin.com/in/aleiamcnaney/" target="_blank">
+                            <i class="icon-social-linkedin"><p class="visually-hidden">Visit LinkedIn</p></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">&nbsp;
+                        <a rel="noreferrer" id="GitHub" class="link-light social-link rounded-circle" href="https://github.com/aleiadevore" target="_blank">
+                            <i class="icon-social-github"><p class="visually-hidden">Visit GitHub</p></i>
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-muted mb-0 small">Copyright &nbsp;© Aleia DeVore 2022</p>
+            </div>
+            <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top">
+                <i class="fa fa-angle-up"><p class="visually-hidden">Scroll to top</p></i>
+            </a>
+        </footer>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/bs-init.js"></script>
+        <script src="assets/js/stylish-portfolio.js"></script>
+    </body>
+    </html>
